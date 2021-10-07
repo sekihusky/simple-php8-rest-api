@@ -4,7 +4,7 @@ I'm using a nginx web server, this rewrite rule is in my vhost config.
 if (!-e $request_filename)
 {
 rewrite ^/user/getone\/([^\/]+?)(\/|$) /user/getone.php?id=$1 last;
-    rewrite ^/user/(.*)$ /user/$1.php last ;
+rewrite ^/user/(.*)$ /user/$1.php last ;
 }
 
 
